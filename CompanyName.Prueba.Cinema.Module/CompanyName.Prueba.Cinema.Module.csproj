@@ -51,6 +51,7 @@
     <Compile Include="Business\DTO\Entities\Chair.cs" />
     <Compile Include="Business\DTO\Entities\User.cs" />
     <Compile Include="Business\DTO\GlobalConfiguration.cs" />
+    <Compile Include="Business\ViewModel\UserViewModel.cs" />
     <Compile Include="DAL\CityActions.cs" />
     <Compile Include="DAL\DetailsActions.cs" />
     <Compile Include="DAL\MovieActions.cs" />
@@ -61,8 +62,6 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ViewModel\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
