@@ -5,13 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CompanyName.Prueba.CinemaWPF.View"
         mc:Ignorable="d"
-        Title="Login" Height="200" Width="400" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="Login" Height="204" Width="400" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
         <Label x:Name="lblUser" Content="User" HorizontalAlignment="Left" Margin="22,21,0,0" VerticalAlignment="Top" Height="25" Width="37"/>
         <Label x:Name="lblPassword" Content="Password" HorizontalAlignment="Left" Margin="22,49,0,0" VerticalAlignment="Top" Height="25" Width="66"/>
-        <TextBox x:Name="txtUser" HorizontalAlignment="Left" Height="23" Margin="105,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="263" VerticalContentAlignment="Center"/>
-        <PasswordBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="105,50,0,0" VerticalAlignment="Top" Width="263" Height="23" VerticalContentAlignment="Center"/>
-        <Button Content="Sing in" HorizontalAlignment="Left" Margin="153,93,0,0" VerticalAlignment="Top" Width="103" Height="30"/>
-        <Label Content="Register" Margin="178,128,0,0" RenderTransformOrigin="0.604,0.154" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF2E00FF" Cursor="Arrow" AllowDrop="True"/>
+        <TextBox x:Name="txtUser" HorizontalAlignment="Left" Height="23" Margin="105,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="263" VerticalContentAlignment="Center" MaxLength="30"/>
+        <PasswordBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="105,50,0,0" VerticalAlignment="Top" Width="263" Height="23" VerticalContentAlignment="Center" MaxLength="30"/>
+        <Button x:Name="btnSingIn" Content="Sing in" HorizontalAlignment="Left" Margin="153,93,0,0" VerticalAlignment="Top" Width="103" Height="30"/>
+        <Button x:Name="btnRegister" Content="Register" HorizontalAlignment="Left" Margin="167,128,0,0" VerticalAlignment="Top" Width="75" Foreground="#FF1D2AAA" FontWeight="Bold" Click="Button_Click">
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+            <Button.Background>
+                <ImageBrush Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>

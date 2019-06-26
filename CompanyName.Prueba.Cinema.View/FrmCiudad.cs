@@ -31,13 +31,13 @@ namespace CompanyName.Prueba.Cinema.View
                 return;
             }
 
-            var city = new Ciudad()
+            var city = new City()
             {
-                CodigoCiudad = codCiudad,
-                NombreCiudad = nomCiudad
+                CityCode = codCiudad,
+                CityName = nomCiudad
             };
 
-            var insertCity = new CiudadActions().insertCiudad((int)Enumerations.GlobalActions.Insertar, city);
+            var insertCity = new CityActions().InsertCity((int)Enumerations.GlobalActions.Insertar, city);
             if (!insertCity)
             {
                 MessageBox.Show("Se generó error al almacenar", Enumerations.GlobalInformation.CompanyName.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Information);

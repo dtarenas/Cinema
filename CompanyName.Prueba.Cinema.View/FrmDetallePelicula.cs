@@ -21,7 +21,7 @@ namespace CompanyName.Prueba.Cinema.View
 
         private void FrmDetallePelicula_Load(object sender, EventArgs e)
         {
-            var detalle = new DetalleActions().GetDetallePeliculas();
+            var detalle = new DetailsActions().GetDetallePeliculas();
             this.grid.DataSource = detalle;
 
         }

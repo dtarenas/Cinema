@@ -24,5 +24,18 @@ namespace CompanyName.Prueba.CinemaWPF.View
         {
             InitializeComponent();
         }
+
+        private void CleanView()
+        {
+            this.txtUser.Clear();
+            this.txtPassword.Clear();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.CleanView();
+            var registerView = new Register();
+            registerView.ShowDialog();
+        }
     }
 }

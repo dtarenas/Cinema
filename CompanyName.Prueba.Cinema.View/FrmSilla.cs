@@ -42,13 +42,13 @@ namespace CompanyName.Prueba.Cinema.View
                 return;
             }
 
-            var silla = new Silla()
+            var silla = new Chair()
             {
                 CodigoSilla = Convert.ToInt32(numeroSilla),
-                Ubicacion  =  Convert.ToChar(ubicacionSilla)
+                Ubication  =  Convert.ToChar(ubicacionSilla)
             };
 
-            var insertCity = new SillaActions().insertSilla((int)Enumerations.GlobalActions.Insertar, silla);
+            var insertCity = new ChairActions().InsertSilla((int)Enumerations.GlobalActions.Insertar, silla);
             if (!insertCity)
             {
                 MessageBox.Show("Se generó error al almacenar", Enumerations.GlobalInformation.CompanyName.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Information);

@@ -45,20 +45,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Business\DTO\Entities\Ciudad.cs" />
-    <Compile Include="Business\DTO\Entities\DetallePelicula.cs" />
-    <Compile Include="Business\DTO\Entities\Pelicula.cs" />
-    <Compile Include="Business\DTO\Entities\Silla.cs" />
+    <Compile Include="Business\DTO\Entities\City.cs" />
+    <Compile Include="Business\DTO\Entities\MovieDetail.cs" />
+    <Compile Include="Business\DTO\Entities\Movie.cs" />
+    <Compile Include="Business\DTO\Entities\Chair.cs" />
+    <Compile Include="Business\DTO\Entities\User.cs" />
     <Compile Include="Business\DTO\GlobalConfiguration.cs" />
-    <Compile Include="DAL\CiudadActions.cs" />
-    <Compile Include="DAL\DetalleActions.cs" />
-    <Compile Include="DAL\PeliculaActions.cs" />
-    <Compile Include="DAL\SillaActions.cs" />
+    <Compile Include="DAL\CityActions.cs" />
+    <Compile Include="DAL\DetailsActions.cs" />
+    <Compile Include="DAL\MovieActions.cs" />
+    <Compile Include="DAL\ChairActions.cs" />
     <Compile Include="Enumerations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ViewModel\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
